@@ -19,11 +19,15 @@
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
                   android:name="org.qtproject.qt5.android.bindings.QtActivity"
                   android:label="my_debug_tool"
-                  android:screenOrientation="unspecified"
+                  android:screenOrientation="landscape"
+android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
                   android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME" />
+                  <category android:name="android.intent.category.DEFAULT" />
+                  <category android:name="android.intent.category.MONKEY"/>
             </intent-filter>
 
             <!-- Application arguments -->

@@ -1,2 +1,10 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>images/bg_deepin.png</file>
+        <file>android_config/AndroidManifest.xml</file>
+        <file>images/ioc_terminal.png</file>
+        <file>app/app_terminal.qml</file>
+    </qresource>
+</RCC>

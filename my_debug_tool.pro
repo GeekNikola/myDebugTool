@@ -1,4 +1,4 @@
-QT += quick
+QT += quick quickcontrols2 widgets
 
 CONFIG += c++11
 
@@ -16,7 +16,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += \
+        R.qrc \
+        qtquickcontrols2.conf
+
 
 TRANSLATIONS += \
     my_debug_tool_zh_CN.ts
@@ -31,3 +34,11 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    app/app_terminal.qml \
+    imports/Theme/Theme.qml \
+    imports/Theme/qmldir \
+    main.qml \
+    qtquickcontrols2.conf
+ANDROID_PACKAGE_SOURCE_DIR =$$PWD/android_config
